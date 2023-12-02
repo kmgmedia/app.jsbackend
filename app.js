@@ -2,6 +2,7 @@ const Joi = require('joi')
 const config = require('config');
 const express = require('express');
 const app = express ();
+app.set('view engine', 'pug');
 // The app.use is called middleware
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
